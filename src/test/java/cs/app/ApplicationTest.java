@@ -20,16 +20,16 @@ public class ApplicationTest {
 
 
     }
-
+/*
     @Test
     void barChartMonitortest(){
-/*        BarChartMonitor chart = new BarChartMonitor("Car Usage Statistics",
-                "Which car do you like?");
-        chart.pack( );
+     BarChartMonitor chart = new BarChartMonitor("",
+                "");
+        chart.pack();
         RefineryUtilities.centerFrameOnScreen( chart );
         chart.setVisible( true );
-  */  }
-/*
+   }
+*/ /*
     @Test
     void pieChartMonitortest(){
         PieChartMonitor demo = new PieChartMonitor( "Mobile Sales" );

@@ -9,7 +9,6 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.ApplicationFrame;
 
 public class BarChartMonitor extends ApplicationFrame {
-    private static Subject subject;
     public BarChartMonitor( String applicationTitle , String chartTitle ) {
         super( applicationTitle );
         JFreeChart barChart = ChartFactory.createBarChart(
@@ -25,7 +24,7 @@ public class BarChartMonitor extends ApplicationFrame {
         setContentPane( chartPanel );
     }
 
-    private CategoryDataset createDataset( ) {
+    private CategoryDataset createDataset(int a, int b, int c, int d ) {
         final String A = "A";
         final String B = "B";
         final String C = "C";
@@ -33,10 +32,10 @@ public class BarChartMonitor extends ApplicationFrame {
         final DefaultCategoryDataset dataset =
                 new DefaultCategoryDataset( );
 
-        dataset.addValue( subject.getA() , A, A );
-        dataset.addValue( subject.getB() , B, B );
-        dataset.addValue( subject.getC() , C, C );
-        dataset.addValue( subject.getD() , D, D );
+        dataset.addValue( a  , A, A );
+        dataset.addValue( b , B, B );
+        dataset.addValue( c, C, C );
+        dataset.addValue( d , D, D );
         return dataset;
     }
 

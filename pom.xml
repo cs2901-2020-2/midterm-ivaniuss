@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>midterm</artifactId>
+    <artifactId>cs2901-2020-2_midterm-ivaniuss</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <sonar.projectKey>cs2901-2020-2_midterm-ivaniuss</sonar.projectKey>

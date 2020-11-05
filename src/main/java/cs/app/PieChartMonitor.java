@@ -17,19 +17,19 @@ public class PieChartMonitor extends ApplicationFrame {
         super( title );
         setContentPane(createDemoPanel( ));
     }
-    private static PieDataset createDataset( ) {
-        DefaultPieDataset dataset = new DefaultPieDataset( );
-        dataset.setValue( "A" , subject.getA());
-        dataset.setValue( "B" , subject.getB());
-        dataset.setValue( "C" , subject.getC());
-        dataset.setValue( "D" , subject.getD());
+    private static PieDataset createDataset(int a, int b, int c, int d ) {
+        DefaultPieDataset dataset = new DefaultPieDataset();
+        dataset.setValue( "A" , a);
+        dataset.setValue( "B" , b);
+        dataset.setValue( "C" , c);
+        dataset.setValue( "D" , d);
         return dataset;
     }
     private static JFreeChart createChart(PieDataset dataset ) {
         JFreeChart chart = ChartFactory.createPieChart(
-                "Mobile Sales",   // chart title
-                dataset,          // data
-                true,             // include legend
+                "",
+                dataset,
+                true,
                 true,
                 false);
 
@@ -37,7 +37,7 @@ public class PieChartMonitor extends ApplicationFrame {
     }
 
     public static Container createDemoPanel( ) {
-        JFreeChart chart = createChart(createDataset( ) );
+        JFreeChart chart = createChart(createDataset(1,2 ,3 ,4 ) );
         return new ChartPanel( chart );
     }
 
